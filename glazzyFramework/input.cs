@@ -23,7 +23,6 @@ namespace glazzyFramework
 
 
 		        //Update your profile Values
-
         public static string username = "Tester@gmail.com";
 	//Enter Firstname
         public static string firstname = "John";
@@ -41,8 +40,12 @@ namespace glazzyFramework
         public static string zip = "92117";
 	//Enter Phone Number
         public static string phone = "2211234567";
+
+        
+
 	//Click Save Button
         public static string save = "buttonclick";
+
 	
 	}
 }
