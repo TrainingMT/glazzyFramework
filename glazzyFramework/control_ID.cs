@@ -30,7 +30,7 @@ namespace glazzyFramework
 =======
 	
 	
-	        //Update your Profile Control ID
+	        /*Update Profile Control ID
         public static string username = "UserName";
         public static string firstname = "FirstName";
         public static string lastname = "LastName";
@@ -40,6 +40,7 @@ namespace glazzyFramework
         public static string city = "CityId";
         public static string zip = "Pincode";
         public static string phone = "PhoneNumber";
+		*/
 	
 	
 	
