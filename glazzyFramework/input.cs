@@ -22,10 +22,7 @@ namespace glazzyFramework
 		public static string invalidSignUpUserName_Value = usernamerandom;// Entering invalid email
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 2629e544a8cf2093191723f1de0d7a1ee5709ae5
 		        //Update your profile Values
         public static string username = "Tester@gmail.com";
 	//Enter Firstname
@@ -50,9 +47,6 @@ namespace glazzyFramework
 	//Click Save Button
         public static string save = "buttonclick";
 
-<<<<<<< HEAD
-=======
-	
->>>>>>> 2629e544a8cf2093191723f1de0d7a1ee5709ae5
+
 	}
 }

@@ -30,7 +30,7 @@ namespace glazzyFramework
 			featureMethod.invalidsignup(driver);//calling function from featuremethod class file for invalid signup 
 			
 			//Schedule Service
-			 featureMethod.ScheduleService(driver); //calling function from featuremethod class file to schedule a service
+			 //featureMethod.ScheduleService(driver); //calling function from featuremethod class file to schedule a service
 		}
 	}
 }
