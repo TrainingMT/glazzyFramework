@@ -9,7 +9,7 @@ namespace glazzyFramework
 {
 	class control_ID
 	{
-<<<<<<< HEAD
+
 		public static string userName_ControlID = "UserName";//Control ID for Username
 		public static string password_ControlID = "Password";//Control ID for Password
 		public static string confirmPassword_ControlID = "ConfirmPassword";//Control ID for ConfrimPassword
@@ -27,7 +27,7 @@ namespace glazzyFramework
 		public static string signUpButton_ControlXpath = "html/body/div/div/div/form/div[2]/div[2]/input";//Control Xpath for signup Password
 		public static string donthaveAccountLink_ControlPartialLinkText = "Don't have an account?";//Control Partial link text for I dont have account 
 		public static string invalidSignUpText_ControlXpath = "html/body/div/div/div/form/div[1]/div[1]/ul/li[1]"; //Control Xpath for Inlavid Sign up text
-=======
+
 	
 	
 	        //Update your Profile Control ID
@@ -41,15 +41,5 @@ namespace glazzyFramework
         public static string zip = "Pincode";
         public static string phone = "PhoneNumber";
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
->>>>>>> b244e626b2d34d3a688269ed0dbf35dc162b264f
 	}
 }
