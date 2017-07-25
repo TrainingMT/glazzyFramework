@@ -8,7 +8,7 @@ namespace glazzyFramework
 {
 	class input
 	{
-		        //Update your profile Values
+		/*Update Profile Values
         public static string username = "Tester@gmail.com";
         public static string firstname = "John";
         public static string lastname = "Doe";
@@ -18,7 +18,8 @@ namespace glazzyFramework
         public static string city = "San Diego";
         public static string zip = "92117";
         public static string phone = "2211234567";
-        public static string save = "buttonclick";
+		*/
+        
 	
 	
 	
