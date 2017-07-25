@@ -28,7 +28,9 @@ namespace glazzyFramework
 			featureMethod.logout(driver); //calling function from featuremethod class file for sucessfull logout
 
 			featureMethod.invalidsignup(driver);//calling function from featuremethod class file for invalid signup 
-												
+			
+			//Schedule Service
+			 featureMethod.ScheduleService(driver); //calling function from featuremethod class file to schedule a service
 		}
 	}
 }
