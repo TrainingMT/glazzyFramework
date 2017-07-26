@@ -13,7 +13,7 @@ namespace glazzyFramework
 		static void Main(string[] args)
 		{
 			IWebDriver driver = new ChromeDriver(@"C:\Automation testing\Driver"); //Intitiallizing chromewebdriver 
-			driver.Url = "http://test-gp.classifiedsolutionsgroup.com/"; //specifying URl
+			driver.Url = "http://122.160.12.156"; //specifying URl
 			driver.Manage().Window.Maximize(); //Command to set window maximize
 
 			featureMethod.normalLogin(driver);// Calling function from featuremethod file for valid login
