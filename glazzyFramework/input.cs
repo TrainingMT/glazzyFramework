@@ -11,19 +11,11 @@ namespace glazzyFramework
 
 		public static Random randomGenartor = new Random();//Initializing Random Generator
 		public static int randomInt = randomGenartor.Next(100);//getting random int from random generator
-		public static string username = "Jack" + randomInt;//Adding random int to get new email everytime
+		public static string usernamerandom = "Gill" + randomInt;//Adding random int to get new email everytime
 		public static string userName_Value = "glazy@gmail.com";//Entering already registered username
 		public static string password_Value = "glazy123";//Entering already registered Password
 
         public static string invalid_UserName_Value = "wrong@gmail.com";//Entering wrong username
-
-
-		public static Random randomGenartor = new Random();//Initializing Random Generator
-		public static int randomInt = randomGenartor.Next(100);//getting random int from random generator
-		public static string usernamerandom = "Jack" + randomInt;//Adding random int to get new email everytime
-		public static string userName_Value = "email@gmail.com";//Entering already registered username
-		public static string password_Value = "Pass123";//Entering already registered Password
-		public static string invalid_UserName_Value = "wrong@gmail.com";//Entering wrong username
 
 		public static string invalid_Password_Value = "Pass123";//Entering wrong Password
 
@@ -55,14 +47,6 @@ namespace glazzyFramework
         public static string color_value = "Red";//enter color
 
        
-
-
-
-
-
-
-
-    
 
 		        //Update your profile Values
         public static string username = "Tester@gmail.com";

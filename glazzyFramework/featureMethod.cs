@@ -31,7 +31,7 @@ namespace glazzyFramework
 			coreMethod.textboxenter(driver, "Id", control_ID.password_ControlID, input.invalid_Password_Value);//Calling coremethod enterText method for entering invalid Password.
 			coreMethod.buttonclick(driver, "Xpath", control_ID.submitButton_ControlXpath);//Calling coremethod buttonclick method to click submit button.
 																						  
-			if (coreMethod.verifyText(driver, "Xpath", control_ID.InvalidLoginText_ControlXpath, "Inavlid login successfull").Equals(true))//Verify the message
+			if (coreMethod.verifyText(driver, "Xpath", control_ID.InvalidLoginText_ControlXpath, "Invalid login attempt.").Equals(true))//Verify the message
 				System.Console.WriteLine("Invalid login successfull");//Print the result in console
 			else
 				System.Console.WriteLine("Inavlid login fail");//Print the result in console

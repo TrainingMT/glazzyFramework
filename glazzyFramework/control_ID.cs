@@ -30,20 +30,7 @@ namespace glazzyFramework
 		public static string signUpButton_ControlXpath = "html/body/div/div/div/form/div[2]/div[2]/input";//Control Xpath for signup Password
 		public static string donthaveAccountLink_ControlPartialLinkText = "Don't have an account?";//Control Partial link text for I dont have account 
 		public static string invalidSignUpText_ControlXpath = "html/body/div/div/div/form/div[1]/div[1]/ul/li[1]"; //Control Xpath for Inlavid Sign up text
-
-
-
-
-        //Update your Profile Control ID
-          public static string uname = "UserName";
-          public static string firstname = "FirstName";
-          public static string lastname = "LastName";
-          public static string dob = "datetimepicker1";
-          public static string address = "Address";
-          public static string state = "StateId";
-          public static string city_profile= "CityId";
-          public static string zip = "Pincode";
-          public static string phone = "PhoneNumber";
+        
 
         //book the service 
         //select the existing location
@@ -87,18 +74,6 @@ namespace glazzyFramework
 
         //pay with paypal
         public static string pay_using_paypal = "/html/body/div[3]/div[2]/form/div/div[3]/div[2]/input[7]";//click on pay using paypal
-
-
-
-
-
-
-
-
-
-    
-
-	
 	
 	//Update Profile Control ID
 	//Enter Username
@@ -114,7 +89,7 @@ namespace glazzyFramework
 	//Select State
         public static string state = "StateId";
 	//Select City
-        public static string city = "CityId";
+        public static string city_id = "CityId";
 	//Enter ZipCode
         public static string zip = "Pincode";
 	//Enter Phone Number
