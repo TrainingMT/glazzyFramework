@@ -139,5 +139,13 @@ namespace glazzyFramework
              driver.Close();
 
         }
+		public static void iHaveAnAccountLogin(IWebDriver driver)
+		{
+			coreMethod.buttonclick(driver, "Xpath", control_ID.iHaveAnAccount_ControlXpath);
+			coreMethod.textboxenter(driver, "Id", control_ID.userName_ControlID, input.userName_Value);//Calling coremethod enterText method for entering Username.
+			coreMethod.textboxenter(driver, "Id", control_ID.password_ControlID, input.password_Value);//Calling coremethod enterText method for entering password.
+			coreMethod.buttonclick(driver, "Xpath", control_ID.submitButton_ControlXpath);//Calling coremethod buttonclick method to click submit button.
+		}
+
     }
 }

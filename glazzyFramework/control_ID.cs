@@ -30,11 +30,12 @@ namespace glazzyFramework
 		public static string signUpButton_ControlXpath = "html/body/div/div/div/form/div[2]/div[2]/input";//Control Xpath for signup Password
 		public static string donthaveAccountLink_ControlPartialLinkText = "Don't have an account?";//Control Partial link text for I dont have account 
 		public static string invalidSignUpText_ControlXpath = "html/body/div/div/div/form/div[1]/div[1]/ul/li[1]"; //Control Xpath for Inlavid Sign up text
-        
+		public static string iHaveAnAccount_ControlXpath = "html/body/div/div/div/form/div[2]/div[1]/a";
 
-        //book the service 
-        //select the existing location
-        public static string existing_location = "/html/body/div[2]/div[4]/div[1]/div/div[2]/ul/li[1]/a/div";
+
+		//book the service 
+		//select the existing location
+		public static string existing_location = "/html/body/div[2]/div[4]/div[1]/div/div[2]/ul/li[1]/a/div";
         //select the exsiting vechile
         public static string existing_vehicle = "/html/body/div[2]/div[4]/div[2]/div/div[2]/ul/li[2]/a/div";
         //select your location if you do't want to use exsiting one

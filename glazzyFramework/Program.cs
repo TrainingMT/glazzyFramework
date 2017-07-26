@@ -25,7 +25,8 @@ namespace glazzyFramework
             featureMethod.signup(driver);// Calling  function from featuremethod class file for new Signup by clicking on I dont have account link
             featureMethod.logout(driver); //calling function from featuremethod class file for sucessfull logout*/
             featureMethod.invalidsignup(driver);//calling function from featuremethod class file for invalid signup
-            featureMethod.book_service(driver);
+			featureMethod.iHaveAnAccountLogin(driver);
+			featureMethod.book_service(driver);
 
 		}
 	}
