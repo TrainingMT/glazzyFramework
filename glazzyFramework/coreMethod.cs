@@ -19,8 +19,7 @@ namespace glazzyFramework
 					new SelectElement(driver.FindElement(By.Id(ControlID))).SelectByValue(value);
 				if (controlType.Equals("xpath"))// Finding element from Xpath
 					new SelectElement(driver.FindElement(By.XPath(ControlID))).SelectByValue(value);
-               /*if (controlType.Equals("CssSelector"))
-                    new SelectElement(driver.FindElement(By.CssSelector(ControlID))).SelectByText(value);*/
+              
 			}
 			catch
 			{

@@ -13,9 +13,10 @@ namespace glazzyFramework
 	{
 		public static void normalLogin(IWebDriver driver)//This is Valid login method for sucessfully logging into application and verifying the title.
 		{
-			//coreMethod.buttonclick(driver, "TagName", control_ID.menu_ControlTag);//Calling coremethod buttonclick method for menu.
-			//coreMethod.buttonclick(driver, "Xpath", control_ID.loginMenuButton_ControlXpath);//Calling coremethod buttonclick method for login menu button.
-			//coreMethod.buttonclick(driver, "Xpath", control_ID.loginimage_ControlXpath);//Calling coremethod buttonclick method for login image.
+
+            coreMethod.buttonclick(driver, "TagName", control_ID.menu_ControlTag);//Calling coremethod buttonclick method for menu.
+           coreMethod.buttonclick(driver, "Xpath", control_ID.loginMenuButton_ControlXpath);//Calling coremethod buttonclick method for login menu button.
+			coreMethod.buttonclick(driver, "Xpath", control_ID.loginimage_ControlXpath);//Calling coremethod buttonclick method for login image.
 			coreMethod.textboxenter(driver, "Id", control_ID.userName_ControlID, input.userName_Value);//Calling coremethod enterText method for entering Username.
 			coreMethod.textboxenter(driver, "Id", control_ID.password_ControlID, input.password_Value);//Calling coremethod enterText method for entering password.
 			coreMethod.buttonclick(driver, "Xpath", control_ID.submitButton_ControlXpath);//Calling coremethod buttonclick method to click submit button.
@@ -31,7 +32,7 @@ namespace glazzyFramework
 			coreMethod.buttonclick(driver, "Xpath", control_ID.submitButton_ControlXpath);//Calling coremethod buttonclick method to click submit button.
 																						  
 			if (coreMethod.verifyText(driver, "Xpath", control_ID.InvalidLoginText_ControlXpath, "Inavlid login successfull").Equals(true))//Verify the message
-				System.Console.WriteLine("Inavlid login successfull");//Print the result in console
+				System.Console.WriteLine("Invalid login successfull");//Print the result in console
 			else
 				System.Console.WriteLine("Inavlid login fail");//Print the result in console
 		}
@@ -57,15 +58,22 @@ namespace glazzyFramework
 			coreMethod.textboxenter(driver, "Id", control_ID.signUpUsername_ControlID, input.invalidSignUpUserName_Value);//Calling coremethod enterText method for entering invalid Username
 			coreMethod.textboxenter(driver, "Id", control_ID.signUpPassword_ControlID, input.signUpPassword_Value);//Calling coremethod enterText method for entering invalid Password
 			coreMethod.textboxenter(driver, "Id", control_ID.signUpConfirmPassword_ControlID, input.signUpUserName_Value);//Calling coremethod enterText method for entering again Password
-			coreMethod.buttonclick(driver, "Xpath", control_ID.submitButton_ControlXpath);//Calling coremethod buttonclick method to click submit button.
-			if (coreMethod.verifyText(driver, "Xpath", control_ID.invalidSignUpText_ControlXpath, "The Email field is not a valid e-mail address.").Equals(true))//Verify the text message for invalid credentials
-				System.Console.WriteLine("Inavlid signup successfull");//Print the result in console
-			else
-				System.Console.WriteLine("Inavlid signup fail");//Print the result in console
+            coreMethod.buttonclick(driver, "Xpath", control_ID.submitButton_ControlXpath);//Calling coremethod buttonclick method to click submit button.
+
+            if (coreMethod.verifyText(driver, "Xpath", control_ID.invalidSignUpText_ControlXpath, "The Email field is not a valid e-mail address.").Equals(true))//Verify the text message for invalid credentials
+            {
+                System.Console.WriteLine("Invalid signup successfull");//Print the result in console
+            }
+            else
+            {
+                System.Console.WriteLine("Invalid signup fail");//Print the result in console
+            }
+           
 		}
 		
         public static void book_service(IWebDriver driver)
         {
+            
             //select existing location
             Thread.Sleep(2000);
             coreMethod.buttonclick(driver, "Xpath", control_ID.existing_location);//calling coremethod button  to click on existing location
@@ -128,6 +136,7 @@ namespace glazzyFramework
             Thread.Sleep(2000);
             coreMethod.buttonclick(driver, "Xpath", control_ID.pay_using_paypal);//calling coremethod button to click on pay
             Thread.Sleep(2000);
+             driver.Close();
 
         }
     }

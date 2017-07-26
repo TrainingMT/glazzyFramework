@@ -34,15 +34,15 @@ namespace glazzyFramework
 
 
         //Update your Profile Control ID
-        /*  public static string username = "UserName";
+          public static string uname = "UserName";
           public static string firstname = "FirstName";
           public static string lastname = "LastName";
           public static string dob = "datetimepicker1";
           public static string address = "Address";
           public static string state = "StateId";
-          public static string city = "CityId";
+          public static string city_profile= "CityId";
           public static string zip = "Pincode";
-          public static string phone = "PhoneNumber";*/
+          public static string phone = "PhoneNumber";
 
         //book the service 
         //select the existing location
