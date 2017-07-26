@@ -27,7 +27,7 @@ namespace glazzyFramework
             featureMethod.invalidsignup(driver);//calling function from featuremethod class file for invalid signup
             featureMethod.book_service(driver);
 
+		}
+	}
 
-        }
-    }
 }
