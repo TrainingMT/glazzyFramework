@@ -19,6 +19,8 @@ namespace glazzyFramework
 					new SelectElement(driver.FindElement(By.Id(ControlID))).SelectByValue(value);
 				if (controlType.Equals("xpath"))// Finding element from Xpath
 					new SelectElement(driver.FindElement(By.XPath(ControlID))).SelectByValue(value);
+               /*if (controlType.Equals("CssSelector"))
+                    new SelectElement(driver.FindElement(By.CssSelector(ControlID))).SelectByText(value);*/
 			}
 			catch
 			{
@@ -52,7 +54,10 @@ namespace glazzyFramework
 					driver.FindElement(By.Id(ControlID)).SendKeys(Value);
 				if (ControlType.Equals("Name"))// Finding element from Xpath
 					driver.FindElement(By.Name(ControlID)).SendKeys(Value);
-			}
+                if (ControlType.Equals("Xpath"))// Finding element from Xpath
+                    driver.FindElement(By.XPath(ControlID)).SendKeys(Value);
+
+            }
 			catch
 			{
 				System.Console.WriteLine("Element is not visible and test failed");//Throw exception if elemnt is not visible
