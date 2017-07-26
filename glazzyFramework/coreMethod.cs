@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
+using System.Drawing;
+using OpenQA.Selenium.Support.Events;
+using System.Threading;
+
 
 namespace glazzyFramework
 {
-	class coreMethod      
+	class coreMethod
 	{
 		public static void dropDownSelect(IWebDriver driver, String controlType, String ControlID, String value)//Coremethod for Dropdown select
 		{
@@ -19,11 +23,12 @@ namespace glazzyFramework
 					new SelectElement(driver.FindElement(By.Id(ControlID))).SelectByValue(value);
 				if (controlType.Equals("xpath"))// Finding element from Xpath
 					new SelectElement(driver.FindElement(By.XPath(ControlID))).SelectByValue(value);
-              
+
 			}
 			catch
 			{
 				System.Console.WriteLine("Element is not visible and test failed");//Throw exception if elemnt is not visible
+				screenshotCapture(driver);
 			}
 		}
 		
@@ -39,6 +44,7 @@ namespace glazzyFramework
 			catch
 			{
 				System.Console.WriteLine("Element is not visible and test failed");//Throw exception if elemnt is not visible
+				screenshotCapture(driver);
 			}
 
 		}
@@ -53,13 +59,14 @@ namespace glazzyFramework
 					driver.FindElement(By.Id(ControlID)).SendKeys(Value);
 				if (ControlType.Equals("Name"))// Finding element from Xpath
 					driver.FindElement(By.Name(ControlID)).SendKeys(Value);
-                if (ControlType.Equals("Xpath"))// Finding element from Xpath
-                    driver.FindElement(By.XPath(ControlID)).SendKeys(Value);
+				if (ControlType.Equals("Xpath"))// Finding element from Xpath
+					driver.FindElement(By.XPath(ControlID)).SendKeys(Value);
 
-            }
+			}
 			catch
 			{
 				System.Console.WriteLine("Element is not visible and test failed");//Throw exception if elemnt is not visible
+				screenshotCapture(driver);
 			}
 		}
 
@@ -82,9 +89,10 @@ namespace glazzyFramework
 			catch
 			{
 				System.Console.WriteLine("Element is not visible and test failed");//Throw exception if elemnt is not visible
-	
+				screenshotCapture(driver);
+
 			}
-			
+
 		}
 		public static string gettext(IWebDriver driver, String ControlType, String ControlID)//Gettext method to read the text from the field
 		{
@@ -128,6 +136,16 @@ namespace glazzyFramework
 				return false;
 		}
 
+		public static void screenshotCapture(IWebDriver driver)
 
+		{
+			Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+			DateTime thisDay = DateTime.Today;
+			int i = 0;
+			string filename = "error_" + thisDay.ToString("D") + "_"+i;
+			Thread.Sleep(2000);
+			i++;
+			ss.SaveAsFile(@"C:\Screenshot\"+ filename+".png", ScreenshotImageFormat.Png);
+		}
 	}
 }
